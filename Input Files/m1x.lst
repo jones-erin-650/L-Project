@@ -1,0 +1,39 @@
+LCC Assemble/Link/Interpret/Debug Ver 5.8  Thu Dec 07 18:53:36 2023
+Jones, Erin, S
+
+Header
+o
+G     0000 main
+E     0003 sub
+G     0008 i
+G     0009 j
+C
+
+Loc   Code           Source Code
+                    .global i
+                    .global j
+                    .global main
+                    .extern sub
+0000  ae00 main:    push lr
+0001  aa00          push fp
+0002  ab8c          mov fp, sp
+
+0003  4801          bl sub+1
+
+0004  ad4c          mov sp, fp
+0005  aa01          pop fp
+0006  ae01          pop lr
+0007  c1c0          ret
+0008  0005 i:       .word 5     ; word equivalent to .fill
+0009  0007 j:       .word 7
+000a  03e7 c:       .word 999
+o
+
+Output file m1x.o needs linking
+
+========================================== Program statistics
+Input file name       =      m1x.a
+Instructions executed =    0 (hex)     0 (dec)
+Program size          =    b (hex)    11 (dec)
+Max stack size        =    0 (hex)     0 (dec)
+Load point            =    0 (hex)     0 (dec)

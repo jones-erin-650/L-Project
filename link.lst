@@ -1,0 +1,58 @@
+LCC Assemble/Link/Interpret/Debug Ver 5.8  Thu Dec 07 18:53:39 2023
+Jones, Erin, S
+
+Header
+o
+S     0001
+G     0003 main
+G     000b i
+G     000c j
+G     000e sub
+A     0021
+A     001f
+C
+
+Loc   Code
+0000  f000
+0001  4801
+0002  f000
+0003  ae00
+0004  aa00
+0005  ab8c
+0006  4808
+0007  ad4c
+0008  aa01
+0009  ae01
+000a  c1c0
+000b  0005
+000c  0007
+000d  03e7
+000e  f000
+000f  ae00
+0010  aa00
+0011  ab8c
+0012  21f8
+0013  220b
+0014  6240
+0015  1001
+0016  220a
+0017  6240
+0018  1001
+0019  f002
+001a  f001
+001b  ad4c
+001c  aa01
+001d  ae01
+001e  c1c0
+001f  0020
+0020  000b
+0021  000d
+====================================================== Output
+1015
+
+========================================== Program statistics
+Input file name       =      link.e
+Instructions executed =   1a (hex)    26 (dec)
+Program size          =   22 (hex)    34 (dec)
+Max stack size        =    4 (hex)     4 (dec)
+Load point            =    0 (hex)     0 (dec)
